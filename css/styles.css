@@ -1,7 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 body {
     background-color: skyblue;
+    font-family: Ubuntu;
+}
+
+.wrapper {
+    background-color: gray;
+    display: flex;
+}
+
+.navbar {
+    background-color: teal;
+    width: 100%;
+    padding: 1em;
+    margin: 1em auto;
+}
+
+.navigation {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.nav-item {
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.link {
+    text-decoration: none;
 }
 
 h1 {
-    font-size: 2em;
+    font-family: Hubballi;
 }

@@ -2,85 +2,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body {
-    background-color: skyblue;
-    color: white;
-    font-family: Ubuntu;
-}
-
-header {
-    background-color: black;
+    font-family: Hubballi;
+    font-size: 1.5rem;
+    background-color: #DEDEDE;
+    color: black;
 }
 
 .wrapper {
-    background-color: gray;
     display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.25em;
+    align-self: center;
 }
 
 .navbar {
-    background-color: black;
-    width: 80%;
-    padding: 1em;
-    margin: 1em auto;
+    width: 100%;
 }
 
 .navigation {
-    list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.5em;
+    list-style: none;
+    padding: 0;
 }
 
 .nav-item {
-    text-decoration: none;
-    padding: 0.5em;
+    margin: 0.5em;
 }
 
 .link {
+    color: black;
+    font-size: 1.8rem;
     text-decoration: none;
-    color: white;
+}
+
+.link:hover {
+    font-weight: bold;
+}
+
+.current {
+    text-decoration: underline;
 }
 
 .content {
     display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-}
-
-.info {
-    font-family: Hubballi;
-    font-size: 2rem;
-}
-
-.work {
-    border-radius: 1%;
-}
-
-.tile {
-    background-color: darkgray;
-    border-radius: 2%;
-    height: 300px;
-    width: 300px;
-    object-fit: contain;
-    overflow: auto;
-    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin: 0.5em;
+}
+
+.flex-item {
+    height: 300px;
+    width: 300px;
+    margin: 0.25em;
+    border-radius: 8px;
+}
+
+.about-art {
+    height: 300px;
+    width: 300px;
+    margin: 0.25em;
+}
+
+.about-box {
+    background: rgb(169,169,169);
+    background: linear-gradient(150deg, rgba(169,169,169,1) 25%, rgba(0,194,55,1) 50%, rgba(0,205,168,1) 75%, rgba(0,144,223,1) 100%);
+    height: 300px;
+    width: 600px;
+    margin: 0.25em;
+    border-radius: 8px;
+    padding: 2em;
+    background-size: 700%;
+    background-position: 0%;
+    overflow: hidden;
+    transition: background-position 1s;
+}
+
+.about-box:hover {
+    background-position: 100%;
 }
 
 img {
-    max-height: 100%;
     max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+img:hover {
+    transform: scale(0.7);
+}
+
+.special {
+    transform: scale(1.5) !important;
+    filter: grayscale(100%);
+    transition: all 1s ease;
+}
+
+.special:hover {
+    filter: grayscale(0%);
 }
 
 footer {
-    background-color: black;
-}
-
-.links {
-    background-color: black;
-    width: 80%;
-    padding: 1em;
-    margin: 1em auto;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    margin-top: 0.5em;
+    align-self: center;
 }

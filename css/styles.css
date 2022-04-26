@@ -2,20 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
 
-/*Body, body container*/
-
-html {
-    display: table;
-    margin: auto;
-}
+/*Body, body wrapper*/
 
 body {
     font-family: Hubballi;
     font-size: 1.5rem;
     background-color: #DEDEDE;
     color: black;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .wrapper {
@@ -125,7 +118,7 @@ footer {
     background-position: 100%;
 }
 
-/*Images*/
+/*Image transforms for artwork*/
 
 .flex-item > img {
     max-width: 100%;
@@ -138,6 +131,8 @@ footer {
     transform: scale(0.7);
 }
 
+/*Image transition for about page*/
+
 .special {
     max-width: 100%;
     max-height: 100%;
@@ -148,12 +143,4 @@ footer {
 
 .special:hover {
     filter: grayscale(0%);
-}
-
-/*Optimizations for desktop view*/
-
-@media only screen and (min-width: 600px) {
-  .about-box {
-        background-size: 700%;
-    }
 }

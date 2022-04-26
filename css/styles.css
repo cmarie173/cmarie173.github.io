@@ -1,5 +1,8 @@
+/*Imported Google font*/
+
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/*Body, body container*/
 
 body {
     font-family: Hubballi;
@@ -15,6 +18,8 @@ body {
     width: 100%;
 }
 
+/*Header and footer*/
+
 header {
     width: 100%;
     padding-top: 0.5em;
@@ -22,6 +27,17 @@ header {
     margin-bottom: 0.25em;
     align-self: center;
 }
+
+footer {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    margin-top: 0.5em;
+    align-self: center;
+}
+
+/*Navigation, links*/
 
 .navbar {
     width: 100%;
@@ -53,12 +69,16 @@ header {
     text-decoration: underline;
 }
 
+/*Main content flex container*/
+
 .content {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
+
+/*Flex-items for artwork*/
 
 .flex-item {
     height: 300px;
@@ -67,6 +87,8 @@ header {
     border-radius: 8px;
 }
 
+/*About page*/
+
 .about-art {
     height: 300px;
     width: 300px;
@@ -74,10 +96,10 @@ header {
 }
 
 .about-box {
-    background: rgb(169,169,169);
-    background: linear-gradient(150deg, rgba(169,169,169,1) 25%, rgba(0,194,55,1) 50%, rgba(0,205,168,1) 75%, rgba(0,144,223,1) 100%);
-    height: 300px;
-    width: 600px;
+    background: #a9a9a9;
+    background: linear-gradient(150deg, #a9a9a9 25%, #00c237 50%, #00cda8 75%, #0090df 100%);
+    max-height: 300px;
+    max-width: 600px;
     margin: 0.25em;
     border-radius: 8px;
     padding: 2em;
@@ -87,9 +109,11 @@ header {
     transition: background-position 1s;
 }
 
-.about-box:hover {
+.about-box:hover, .about-box:focus {
     background-position: 100%;
 }
+
+/*Images*/
 
 img {
     max-width: 100%;
@@ -98,7 +122,7 @@ img {
     transition: all 0.5s ease;
 }
 
-img:hover {
+img:hover, img:focus {
     transform: scale(0.7);
 }
 
@@ -112,11 +136,10 @@ img:hover {
     filter: grayscale(0%);
 }
 
-footer {
-    width: 100%;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    text-align: center;
-    margin-top: 0.5em;
-    align-self: center;
-}
+/*Optimizations for desktop view
+
+- Need to fix about page (have to scroll on mobile, not great)
+- Need to fix animations for about page, esp on mobile
+- Add accessibility things like aria-labels, etc
+
+@media query here

@@ -1,6 +1,7 @@
 /*Imported Google font*/
 
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /*Body, body wrapper*/
 
@@ -38,6 +39,10 @@ footer {
     align-self: center;
 }
 
+h1 {
+    font-family: Raleway;
+}
+
 /*Navigation, links*/
 
 .navbar {
@@ -62,7 +67,7 @@ footer {
     text-decoration: none;
 }
 
-.link:hover {
+.link:hover, .link:focus {
     font-weight: bold;
 }
 
@@ -80,20 +85,11 @@ footer {
     align-self: center;
 }
 
-/*Flex-items for artwork*/
-
-.flex-item {
-    height: 300px;
-    width: 300px;
-    margin: 0.25em;
-    border-radius: 8px;
-}
-
 /*About page*/
 
 .about-art {
-    height: 400px;
-    width: 400px;
+    max-height: 400px;
+    max-width: 400px;
     margin: 0.25em;
     align-self: center;
 }
@@ -101,7 +97,6 @@ footer {
 .about-box {
     background: #a9a9a9;
     background: linear-gradient(150deg, #a9a9a9 50%, #00c237 69%, #00cda8 84%, #0090df 100%);
-    max-height: auto;
     max-width: 600px;
     min-height: auto;
     min-width: auto;
@@ -118,16 +113,17 @@ footer {
     background-position: 100%;
 }
 
-/*Image transforms for artwork*/
+/*Work page: Images*/
 
-.flex-item > img {
-    max-width: 100%;
-    max-height: 100%;
+.flex-item {
+    height: 300px;
+    width: 300px;
+    margin: 0.25em;
     border-radius: 8px;
     transition: all 0.5s ease;
 }
 
-.flex-item > img:hover, .flex-item > img:focus {
+.flex-item:hover, .flex-item:focus {
     transform: scale(0.7);
 }
 
@@ -141,6 +137,6 @@ footer {
     transition: all 1s ease;
 }
 
-.special:hover {
+.special:hover, .special:focus {
     filter: grayscale(0%);
 }

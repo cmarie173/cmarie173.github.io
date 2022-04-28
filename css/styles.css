@@ -1,7 +1,6 @@
-/*Imported Google font*/
+/*Imported Google fonts*/
 
-@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Hubballi&family=Whisper&display=swap');
 
 /*Body, body wrapper*/
 
@@ -23,10 +22,14 @@ body {
 /*Header and footer*/
 
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
     align-self: center;
 }
 
@@ -40,14 +43,12 @@ footer {
 }
 
 h1 {
-    font-family: Raleway;
+    font-family: Whisper;
+    font-size: 2rem;
+    text-align: center;
 }
 
 /*Navigation, links*/
-
-.navbar {
-    width: 100%;
-}
 
 .navigation {
     display: flex;
@@ -55,10 +56,12 @@ h1 {
     align-items: center;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .nav-item {
-    margin: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
 }
 
 .link {
@@ -124,7 +127,7 @@ h1 {
 }
 
 .flex-item:hover, .flex-item:focus {
-    transform: scale(0.7);
+    transform: scale(0.8);
 }
 
 /*Image transition for about page*/
@@ -139,4 +142,22 @@ h1 {
 
 .special:hover, .special:focus {
     filter: grayscale(0%);
+}
+
+/*Header change from mobile to desktop*/
+
+@media screen and (min-width: 480px) {
+    header {
+        flex-direction: row;
+    }
+
+    h1 {
+        margin-right: auto;
+        margin-left: 2em;
+    }
+
+    .navbar {
+        margin-left: auto;
+        margin-right: 2em;
+    }
 }

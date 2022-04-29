@@ -128,7 +128,7 @@ h1 {
 
 .flex-item:hover, .flex-item:focus {
     transform: scale(0.8);
-    box-shadow: 0 0 30px black;
+    box-shadow: 0 0 20px #919191;
 }
 
 /*Image transition for about page*/
@@ -147,7 +147,7 @@ h1 {
 
 /*Header change from mobile to desktop*/
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 500px) {
     header {
         flex-direction: row;
     }
